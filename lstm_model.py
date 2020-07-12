@@ -391,7 +391,7 @@ test_final = scaler.fit_transform(test_final)
 train, test, test_final
 
 # convert an array of values into a dataset matrix
-def create_dataset(dataset, look_back=1):
+def create_dataset(dataset, look_back=24):
     X, Y = [], []
     for i in range(len(dataset)-look_back-1):
         a = dataset[i:(i+look_back), 0]
