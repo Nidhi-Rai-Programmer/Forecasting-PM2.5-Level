@@ -1,4 +1,4 @@
-import numpy as np
+_1import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 import scipy
@@ -25,9 +25,9 @@ from flask import Markup
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 
-app = Flask(__name__, template_folder = 'C:\\Users\\abc\\Desktop\\AirPollution_Vinod\\lstm_model\\templates')
+app = Flask(__name__, template_folder = 'index_1.html')
 from tensorflow import keras
-load_model = keras.models.load_model('C:\\Users\\abc\\Desktop\\AirPollution_Vinod\\lstm_model\lstm_model1')
+load_model = keras.models.load_model('')
 
 type(load_model)
 
