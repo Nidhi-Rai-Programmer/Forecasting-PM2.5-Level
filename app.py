@@ -93,4 +93,4 @@ def predict():
     return render_template('index__1.html', table  = table)
 
 if __name__ == "__main__":
-    app.run(debug = False)
+    app.run(debug = True)
