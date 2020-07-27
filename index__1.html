@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+</style>
+</head>
+<body bgcolor='#66CDAA'>
+
+<h1>Delhi Air Quality-LSTM Method</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <br> Mention the no. of hours to predict the pm 2.5 after 20th April:</br>
+    <br> </br>	
+
+	<form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="no of hours" placeholder="Input no of hours" required="required" />
+        <!--<input type="text" name="TS input 2" placeholder="TS input 2" required="required" />-->
+	<!--<input type="text" name="TS input 3" placeholder="TS input 3" required="required" />-->
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict pm2.5 values</button>
+    </form>
+
+
+
+
+
+
+ </div>
+
+{{table | safe}}
+
+
+</body>
+</html>
